@@ -39,7 +39,6 @@ def obscure_ip(ip):
 		print('[+] http://'+str(hex(int(match.group('a'))))+'.'+re.sub('o','',str(oct(int(match.group('b')))))+'.'+str(int(match.group('c'))*256**1+int(match.group('d'))))
 		print('[+] http://'+re.sub('o','',str(oct(int(match.group('a')))))+'.'+str(hex(int(match.group('b'))))+'.'+str(int(match.group('c'))*256**1+int(match.group('d'))))
 		
-
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser(description=NAME+VERSION, epilog=AUTHOR)
 	parser.add_argument('--ip',	dest='ip', 	help='Targeted IP (e.g. \'127.0.0.1\')')
